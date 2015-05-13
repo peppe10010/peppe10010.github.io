@@ -1,0 +1,66 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  overflow: hidden;
+  background: url(http://subtlepatterns.com/patterns/congruent_outline.png);
+}
+
+.notify {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  width: 170px;
+  border: 3px solid transparent;
+  border-bottom-color: #e74c3c;
+  color: #e74c3c;
+  font-size: 30px;
+  opacity: 0.6;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: all, 0.2s, ease-in-out;
+  transition: all, 0.2s, ease-in-out;
+  text-align: left;
+  overflow: hidden;
+  outline: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.notify:hover {
+  opacity: 1;
+  width: 200px;
+}
+.notify:hover i, .notify:hover span {
+  top: 3px;
+  right: 5px;
+  -webkit-animation: shake 0.2s linear infinite;
+  animation: shake 0.2s linear infinite;
+}
+.notify i, .notify span {
+  font-size: 30px;
+  right: 0;
+  position: absolute;
+  top: -15px;
+  -webkit-transition: all, 0.2s, ease-in-out;
+  transition: all, 0.2s, ease-in-out;
+  -ms-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
+  -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+          transform-origin: top left;
+}
+@-webkit-keyframes shake {
+  50% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+}
+@keyframes shake {
+  50% {
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+}
