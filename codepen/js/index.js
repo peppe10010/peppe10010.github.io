@@ -14,7 +14,7 @@ $(document).ready(function(){
       if (log = "granted") {
          var n = new Notification( randomTitle,{ 
             body: randomText,
-            icon :"http://i55.tinypic.com/2egd7v8.png"
+            icon :"http://media-curse.cursecdn.com/attachments/76/92/8c92967b362a928900633e52e41699c6.png"
          });
          n.addEventListener("show", function() {
             var audio = new Audio(randomSound);
