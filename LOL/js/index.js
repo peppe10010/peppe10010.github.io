@@ -125,14 +125,14 @@ $(document).ready(function(){
       if((parseInt(radius[i]) <= 0  && moving) || (i > 60 && !moving))
       {
         if(!moving) i = 0;
-        delete py.splice(i, 1);
-        delete redColor.splice(i, 1);
-        delete greenColor.splice(i, 1);
-        delete blueColor.splice(i, 1);
-        delete px.splice(i, 1);
-        delete direction.splice(i, 1);
-        delete directionY.splice(i, 1);
-        delete radius.splice(i, 1);
+        delete py.splice(i, 2);
+        delete redColor.splice(i, 2);
+        delete greenColor.splice(i, 2);
+        delete blueColor.splice(i, 2);
+        delete px.splice(i, 2);
+        delete direction.splice(i, 2);
+        delete directionY.splice(i, 2);
+        delete radius.splice(i, 2);
       }
     }
     time++;
