@@ -1,0 +1,3 @@
+body{ background-color: black; margin: 0; overflow: hidden;}
+canvas{ background-color: white; }
+#fps{ position: absolute; left: 0; top: 0;}
